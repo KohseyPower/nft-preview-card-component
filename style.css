@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+ :root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Dark-blue-card-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* main structure */
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 22px;
+    background-color: var(--Dark-blue-main-bg);
+}
+
+main {
+    background-color: var(--Dark-blue-card-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 13px 20px 20px hsl(215, 54%, 9%);
+    max-width: 260px;
+}
+
+.equilibrium section {
+    position: relative;
+}
+
+.equilibrium section img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.equilibrium section div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 14px);
+    z-index: 667;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.equilibrium section div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.equilibrium section div img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+h1 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: white;
+    font-size: 17px;
+}
+
+h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.equilibrium p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-weight: 400;
+    display: flex;
+}
+
+.left {
+    color: cyan;
+}
+
+.caca {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.caca p {
+    margin-left: 15px;
+}
+
+.caca p span {
+    color: white;
+}
+
+.caca p span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
